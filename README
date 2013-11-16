@@ -1,0 +1,26 @@
+RavrProg is for programming AVR controllers.
+
+Currently ISP and ATmega Jtag programming is implemented and tested.
+HVPP and HVSP fuse programming should work, flash and eeprom read/write code was not tested but may work.
+
+
+STK500 code was tested on my U2S clone.
+STK600 code was written but not tested.
+AVRISP mkI use the same code as the STK500.
+AVRISP mkII was tested with the LUFA clone.
+JTAGICE mkI was tested on my clone.
+JTAGICE mkII code was tested using my dragon.
+USBasp is not implemented yet.
+LUFACDC code still needs testing.
+
+
+---Building---
+You need to have libusb-0.1.xx-dev and Qt4-dev installed.
+Do a qmake (or qmake-qt4 if qt3 is installed too), then make.
+Inside /usr/lib do -> ln -s /home/name/....../RavrProg/RavrProg/libRavrProg.so.1.0.0 libRavrProg.so.1
+Run RavrProgQt
+
+
+---FAQ---
+Q: I get a garbled USB serial number.
+A: Check udev permissions or use sudo.

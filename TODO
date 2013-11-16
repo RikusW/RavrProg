@@ -1,0 +1,18 @@
+
+--STK600--
+MJ -- wrapper
+PDI + XJ
+test TPI
+
+--JTAGICE mkII  +  AVRDragon--
+PDI + XJ
+test dragon hvpp/hvsp
+
+--USBasp--
+implement the protocol
+
+---------------------------------------
+For later
+
+Implement Debug_IF
+

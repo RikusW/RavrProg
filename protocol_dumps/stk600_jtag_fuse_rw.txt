@@ -1,0 +1,684 @@
+---Connect---
+
+Sending packet 12/02/2011 14:52:23.288
+CMD_SIGN_ON
+( 200 ms, 1 bytes) > 01 
+
+Receiving packet 12/02/2011 14:52:23.288
+CMD_SIGN_ON
+( 200 ms, 9 bytes) < 01 00 06 53 54 4B 36 30 30 
+Returned status: Command succeeded
+
+----------JTAG CHAIN---------
+
+Sending packet 12/02/2011 14:52:23.288 //Units after
+CMD_SET_PARAMETER
+(1000 ms, 3 bytes) > 02 56 00 
+
+Receiving packet 12/02/2011 14:52:23.288
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:23.288 //Bits before
+CMD_SET_PARAMETER
+(1000 ms, 3 bytes) > 02 53 00 
+
+Receiving packet 12/02/2011 14:52:23.288
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:23.288 //Units before
+CMD_SET_PARAMETER
+(1000 ms, 3 bytes) > 02 55 00 
+
+Receiving packet 12/02/2011 14:52:23.303
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:23.303 //Bits after
+CMD_SET_PARAMETER
+(1000 ms, 3 bytes) > 02 54 00 
+
+Receiving packet 12/02/2011 14:52:23.303
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+----------JTAG CHAIN---------
+
+Sending packet 12/02/2011 14:52:23.319 --RCID--
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 C8 
+
+Receiving packet 12/02/2011 14:52:23.319
+CMD_GET_PARAMETER
+(1000 ms, 4 bytes) < 03 00 00 42 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:23.319 --ECID--
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 C9 
+
+Receiving packet 12/02/2011 14:52:23.319
+CMD_GET_PARAMETER
+(1000 ms, 4 bytes) < 03 00 00 01 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:23.319  --HW Ver--
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 90 
+
+Receiving packet 12/02/2011 14:52:23.319
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 02 
+Returned status: Command succeeded
+
+
+
+Sending packet 12/02/2011 14:52:23.319 --SW--
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 91 
+
+Receiving packet 12/02/2011 14:52:23.319
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 02 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:23.319 --SW--
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 92 
+
+Receiving packet 12/02/2011 14:52:23.319
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 0B 
+Returned status: Command succeeded
+
+
+
+Sending packet 12/02/2011 14:52:23.319 --SWS2--
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 AA 
+
+Receiving packet 12/02/2011 14:52:23.319
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 02 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:23.319 --SWS2--
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 AB 
+
+Receiving packet 12/02/2011 14:52:23.319
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 01 
+Returned status: Command succeeded
+
+
+
+Sending packet 12/02/2011 14:52:23.319 --SWS1--
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 A8 
+
+Receiving packet 12/02/2011 14:52:23.319
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 02 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:23.319 --SWS1--
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 A9 
+
+Receiving packet 12/02/2011 14:52:23.319
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 01 
+Returned status: Command succeeded
+
+
+---Connect---
+---------------------------------------------------------
+---Common Enter---
+
+
+
+Sending packet 12/02/2011 14:52:24.038 --RID--
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 A6 
+
+Receiving packet 12/02/2011 14:52:24.038
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 FF 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:24.038 --SID--
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 A5 
+
+Receiving packet 12/02/2011 14:52:24.038
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 0F 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:24.038 --EID--
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 A7 
+
+Receiving packet 12/02/2011 14:52:24.038
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 FF 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:24.038 --ID-S--
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 AD 
+
+Receiving packet 12/02/2011 14:52:24.038
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:24.038 --HWV-- ?!
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 90 
+
+Receiving packet 12/02/2011 14:52:24.038
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 02 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:24.069 //HW Ver
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 90 
+
+Receiving packet 12/02/2011 14:52:24.069
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 02 
+Returned status: Command succeeded
+
+
+
+
+Sending packet 12/02/2011 14:52:24.194  --Flash pgsz--
+CMD_SET_PARAMETER
+(1000 ms, 4 bytes) > 02 C7 01 00 
+
+Receiving packet 12/02/2011 14:52:24.194
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:24.194 --Eeprom pgsz--
+CMD_SET_PARAMETER
+(1000 ms, 3 bytes) > 02 52 08 
+
+Receiving packet 12/02/2011 14:52:24.194
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:24.194 --fl sz h--
+CMD_SET_PARAMETER
+(1000 ms, 4 bytes) > 02 C5 00 04 
+
+Receiving packet 12/02/2011 14:52:24.194
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:24.194 --fl sz l--
+CMD_SET_PARAMETER
+(1000 ms, 4 bytes) > 02 C6 00 00 
+
+Receiving packet 12/02/2011 14:52:24.194
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:24.194 --full page stream--
+CMD_SET_PARAMETER
+(1000 ms, 3 bytes) > 02 50 00 
+
+Receiving packet 12/02/2011 14:52:24.194
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+---Common Enter---
+----------------------------------------------------------
+
+Sending packet 12/02/2011 14:52:24.225 --Enter--
+CMD_JTAG_AVR
+(1000 ms, 2 bytes) > 90 14 
+
+Receiving packet 12/02/2011 14:52:24.272
+CMD_JTAG_AVR
+(1000 ms, 2 bytes) < 90 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:24.288 --Read-mem-fuse--
+CMD_JTAG_AVR
+(5000 ms, 11 bytes) > 90 05 B2 00 00 00 01 00 00 00 00 
+
+Receiving packet 12/02/2011 14:52:24.288
+CMD_JTAG_AVR
+(5000 ms, 3 bytes) < 90 00 62 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:24.288 --Read-mem-fuse--
+CMD_JTAG_AVR
+(5000 ms, 11 bytes) > 90 05 B2 00 00 00 01 00 00 00 01 
+
+Receiving packet 12/02/2011 14:52:24.288
+CMD_JTAG_AVR
+(5000 ms, 3 bytes) < 90 00 99 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:24.288 --Read-mem-fuse--
+CMD_JTAG_AVR
+(5000 ms, 11 bytes) > 90 05 B2 00 00 00 01 00 00 00 02 
+
+Receiving packet 12/02/2011 14:52:24.288
+CMD_JTAG_AVR
+(5000 ms, 3 bytes) < 90 00 FF 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:24.303 --Leave--
+CMD_JTAG_AVR
+(1000 ms, 2 bytes) > 90 15 
+
+Receiving packet 12/02/2011 14:52:24.319
+CMD_JTAG_AVR
+(1000 ms, 2 bytes) < 90 00 
+Returned status: Command succeeded
+
+----------------------------------------------------------
+//same init as above....
+
+Sending packet 12/02/2011 14:52:43.694 //RID
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 A6 
+
+Receiving packet 12/02/2011 14:52:43.694
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 FF 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:43.694 //SID
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 A5 
+
+Receiving packet 12/02/2011 14:52:43.694
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 0F 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:43.694 //EID
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 A7 
+
+Receiving packet 12/02/2011 14:52:43.694
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 FF 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:43.694 //BIS
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 AD 
+
+Receiving packet 12/02/2011 14:52:43.694
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:43.694 //HW ver
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 90 
+
+Receiving packet 12/02/2011 14:52:43.694
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 02 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:43.897
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 90 
+
+Receiving packet 12/02/2011 14:52:43.897 //HW ver
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 02 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:44.069
+CMD_SET_PARAMETER
+(1000 ms, 4 bytes) > 02 C7 01 00 
+
+Receiving packet 12/02/2011 14:52:44.069
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:44.069
+CMD_SET_PARAMETER
+(1000 ms, 3 bytes) > 02 52 08 
+
+Receiving packet 12/02/2011 14:52:44.069
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:44.069
+CMD_SET_PARAMETER
+(1000 ms, 4 bytes) > 02 C5 00 04 
+
+Receiving packet 12/02/2011 14:52:44.069
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:44.069
+CMD_SET_PARAMETER
+(1000 ms, 4 bytes) > 02 C6 00 00 
+
+Receiving packet 12/02/2011 14:52:44.069
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:44.069
+CMD_SET_PARAMETER
+(1000 ms, 3 bytes) > 02 50 00 
+
+Receiving packet 12/02/2011 14:52:44.069
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+----------------------------------------------------------
+
+Sending packet 12/02/2011 14:52:44.100
+CMD_JTAG_AVR
+(1000 ms, 2 bytes) > 90 14 
+
+Receiving packet 12/02/2011 14:52:44.147
+CMD_JTAG_AVR
+(1000 ms, 2 bytes) < 90 00 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:44.163
+CMD_JTAG_AVR
+(5000 ms, 12 bytes) > 90 04 B2 00 00 00 01 00 00 00 00 E2 --Write-mem-fuse--
+
+Receiving packet 12/02/2011 14:52:44.163
+CMD_JTAG_AVR
+(5000 ms, 2 bytes) < 90 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:44.178
+CMD_JTAG_AVR
+(5000 ms, 12 bytes) > 90 04 B2 00 00 00 01 00 00 00 01 99  --Write-mem-fuse--
+
+Receiving packet 12/02/2011 14:52:44.194
+CMD_JTAG_AVR
+(5000 ms, 2 bytes) < 90 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:44.210
+CMD_JTAG_AVR
+(5000 ms, 12 bytes) > 90 04 B2 00 00 00 01 00 00 00 02 FF  --Write-mem-fuse--
+
+Receiving packet 12/02/2011 14:52:44.210
+CMD_JTAG_AVR
+(5000 ms, 2 bytes) < 90 00 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:44.256
+CMD_JTAG_AVR
+(5000 ms, 11 bytes) > 90 05 B2 00 00 00 01 00 00 00 00 --Read-mem-fuse--
+
+Receiving packet 12/02/2011 14:52:44.256
+CMD_JTAG_AVR
+(5000 ms, 3 bytes) < 90 00 E2 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:44.256
+CMD_JTAG_AVR
+(5000 ms, 11 bytes) > 90 05 B2 00 00 00 01 00 00 00 01  --Read-mem-fuse--
+
+Receiving packet 12/02/2011 14:52:44.256
+CMD_JTAG_AVR
+(5000 ms, 3 bytes) < 90 00 99 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:44.256
+CMD_JTAG_AVR
+(5000 ms, 11 bytes) > 90 05 B2 00 00 00 01 00 00 00 02  --Read-mem-fuse--
+
+Receiving packet 12/02/2011 14:52:44.256
+CMD_JTAG_AVR
+(5000 ms, 3 bytes) < 90 00 FF 
+Returned status: Command succeeded
+
+
+Sending packet 12/02/2011 14:52:44.272
+CMD_JTAG_AVR
+(1000 ms, 2 bytes) > 90 15 
+
+Receiving packet 12/02/2011 14:52:44.288
+CMD_JTAG_AVR
+(1000 ms, 2 bytes) < 90 00 
+Returned status: Command succeeded
+
+----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sending packet 12/02/2011 14:52:48.491
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 A6 
+
+Receiving packet 12/02/2011 14:52:48.491
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 FF 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:48.491
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 A5 
+
+Receiving packet 12/02/2011 14:52:48.491
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 0F 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:48.491
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 A7 
+
+Receiving packet 12/02/2011 14:52:48.491
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 FF 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:48.491
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 AD 
+
+Receiving packet 12/02/2011 14:52:48.491
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:48.491
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 90 
+
+Receiving packet 12/02/2011 14:52:48.491
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 02 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:48.694
+CMD_GET_PARAMETER
+(1000 ms, 2 bytes) > 03 90 
+
+Receiving packet 12/02/2011 14:52:48.694
+CMD_GET_PARAMETER
+(1000 ms, 3 bytes) < 03 00 02 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:48.819
+CMD_SET_PARAMETER
+(1000 ms, 4 bytes) > 02 C7 01 00 
+
+Receiving packet 12/02/2011 14:52:48.819
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:48.835
+CMD_SET_PARAMETER
+(1000 ms, 3 bytes) > 02 52 08 
+
+Receiving packet 12/02/2011 14:52:48.835
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:48.835
+CMD_SET_PARAMETER
+(1000 ms, 4 bytes) > 02 C5 00 04 
+
+Receiving packet 12/02/2011 14:52:48.835
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:48.835
+CMD_SET_PARAMETER
+(1000 ms, 4 bytes) > 02 C6 00 00 
+
+Receiving packet 12/02/2011 14:52:48.835
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:48.835
+CMD_SET_PARAMETER
+(1000 ms, 3 bytes) > 02 50 00 
+
+Receiving packet 12/02/2011 14:52:48.835
+CMD_SET_PARAMETER
+(1000 ms, 2 bytes) < 02 00 
+Returned status: Command succeeded
+
+----------------------------------------------------------
+
+Sending packet 12/02/2011 14:52:48.850
+CMD_JTAG_AVR
+(1000 ms, 2 bytes) > 90 14 
+
+Receiving packet 12/02/2011 14:52:48.913
+CMD_JTAG_AVR
+(1000 ms, 2 bytes) < 90 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:48.913
+CMD_JTAG_AVR
+(5000 ms, 12 bytes) > 90 04 B2 00 00 00 01 00 00 00 00 62 
+
+Receiving packet 12/02/2011 14:52:48.928
+CMD_JTAG_AVR
+(5000 ms, 2 bytes) < 90 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:48.944
+CMD_JTAG_AVR
+(5000 ms, 12 bytes) > 90 04 B2 00 00 00 01 00 00 00 01 99 
+
+Receiving packet 12/02/2011 14:52:48.944
+CMD_JTAG_AVR
+(5000 ms, 2 bytes) < 90 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:48.975
+CMD_JTAG_AVR
+(5000 ms, 12 bytes) > 90 04 B2 00 00 00 01 00 00 00 02 FF 
+
+Receiving packet 12/02/2011 14:52:48.975
+CMD_JTAG_AVR
+(5000 ms, 2 bytes) < 90 00 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:49.006
+CMD_JTAG_AVR
+(5000 ms, 11 bytes) > 90 05 B2 00 00 00 01 00 00 00 00 
+
+Receiving packet 12/02/2011 14:52:49.006
+CMD_JTAG_AVR
+(5000 ms, 3 bytes) < 90 00 62 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:49.006
+CMD_JTAG_AVR
+(5000 ms, 11 bytes) > 90 05 B2 00 00 00 01 00 00 00 01 
+
+Receiving packet 12/02/2011 14:52:49.006
+CMD_JTAG_AVR
+(5000 ms, 3 bytes) < 90 00 99 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:49.006
+CMD_JTAG_AVR
+(5000 ms, 11 bytes) > 90 05 B2 00 00 00 01 00 00 00 02 
+
+Receiving packet 12/02/2011 14:52:49.006
+CMD_JTAG_AVR
+(5000 ms, 3 bytes) < 90 00 FF 
+Returned status: Command succeeded
+
+Sending packet 12/02/2011 14:52:49.038
+CMD_JTAG_AVR
+(1000 ms, 2 bytes) > 90 15 
+
+Receiving packet 12/02/2011 14:52:49.053
+CMD_JTAG_AVR
+(1000 ms, 2 bytes) < 90 00 
+Returned status: Command succeeded
+Port closed
+Returned status: Command succeeded
+
+----------------------------------------------------------
+
