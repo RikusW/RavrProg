@@ -173,7 +173,7 @@ void Device::GetFuseBits(u32 a, AvrFuse *r, RConfigNode *t, const char *nm)
 
 		s = t->line; //retrieve default value, eg: LOW=$62
 		if(s.Contains("=")) {
-			x.Split(s,'=');
+			x.SplitL(s,'=');
 			u = s;
 		}else{
 			u = 0xFF; //mainly for lockbits and incomplete files
@@ -185,7 +185,7 @@ void Device::GetFuseBits(u32 a, AvrFuse *r, RConfigNode *t, const char *nm)
 		for(c = (RConfigNode*)t->child; c; c = (RConfigNode*)c->next) {
 			AvrFuse *g = new AvrFuse(this,r,c->line,a); //XXX r->f ???? ----XXX fixme XXX
 			s = c->line;
-			z.Split(s,'=');
+			z.SplitL(s,'=');
 			u8 ss = g->mask = (u8)s;
 			g->value = g->def = g->mask & u; //default value
 
@@ -201,7 +201,7 @@ void Device::GetFuseBits(u32 a, AvrFuse *r, RConfigNode *t, const char *nm)
 				AvrFuse *h = new AvrFuse(this,g,d->line,a);
 				h->mask = g->mask;
 				s = d->line;
-				z.Split(s,'=');
+				z.SplitL(s,'=');
 				h->value = (u8)(((u32)z) << shift);
 			}
 		}
@@ -309,7 +309,7 @@ Device *FillList(RTreeNode *n)
 		//printf("-%s-\n",p->name);
 		if((t = n->GetNode("sig"))) {
 			s = t->line;
-			r.Split(s,'=');
+			r.SplitL(s,'=');
 			u32 u = s;
 			//printf("    sig-> %s --- %X\n",s.GetStr(),u);
 			p->signature = u;
@@ -357,7 +357,7 @@ Device *FillList(RTreeNode *n)
 
 		if((t = n->GetNode("id"))) {
 			s = t->line;
-			r.Split(s,'=');
+			r.SplitL(s,'=');
 			u32 u = s;
 			//printf("    jtid-> %s --- %X\n",s.GetStr(),u);
 			p->jtag_id = u;
