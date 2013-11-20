@@ -6,20 +6,29 @@
 //#include <unistd.h> //for usleep
 #include <string.h>
 
-//Select one, or none
-//#define RCOM_SERIAL //still buggy... timeout too early...
-#define QEXT_SERIAL
+//-----------------------------------------------------------------------------
 
-#if defined RCOM_SERIAL && defined QEXT_SERIAL
-#error RCOM_SERIAL and QEXT_SERIAL cannot be used simultaneously
-#endif
+#ifdef WIN32
 
-#define LIBUSB
+#define RCOM_SERIAL //work ok in windows
 
 //TODO add winusb support ?
 //TODO add win libusb support ?
 //TODO maybe add Jungo support ?
 
+#else //---------------------------------
+
+//Select one, or none
+//#define RCOM_SERIAL //still buggy... timeout too early...
+#define QEXT_SERIAL
+
+#define LIBUSB
+
+#endif
+
+#if defined RCOM_SERIAL && defined QEXT_SERIAL
+#error RCOM_SERIAL and QEXT_SERIAL cannot be used simultaneously
+#endif
 
 //-----------------------------------------------------------------------------
 
