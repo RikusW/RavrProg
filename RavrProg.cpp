@@ -47,7 +47,7 @@ ProgJTAGICEmkIIu jtagmkiiu;
 ProgJTAGICEmkIIs jtagmkiis;
 
 //Other programmers
-ProgUSBasp usbasp;
+//ProgUSBasp usbasp;
 ProgLUFACDC lufacdc; //partial AVR109 implementation
 
 Device *device_list = 0;
@@ -66,8 +66,7 @@ Programmer *GetProgrammerList()
 	dragon.next = &jtagmki;
 	jtagmki.next = &jtagmkiiu;
 	jtagmkiiu.next = &jtagmkiis;
-	jtagmkiis.next = &usbasp;
-	usbasp.next = &lufacdc;
+	jtagmkiis.next = &lufacdc;
 
 	return &u2s;
 }
