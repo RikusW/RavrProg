@@ -10,6 +10,7 @@ DEPENDPATH += .
 INCLUDEPATH += .
 
 LIBS += -lusb
+QMAKE_CXXFLAGS += -Wno-unused-parameter
 
 # Input
 
