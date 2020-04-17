@@ -9,7 +9,7 @@ TARGET =
 DEPENDPATH += .
 INCLUDEPATH += .
 
-LIBS += -lusb
+LIBS += -lusb -lRtk
 QMAKE_CXXFLAGS += -Wno-unused-parameter
 
 # Input
