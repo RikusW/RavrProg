@@ -9,14 +9,6 @@ TARGET =
 DEPENDPATH += .
 INCLUDEPATH += .
 
-INCLUDEPATH += ./qextserialport
-QMAKE_LIBDIR += ./qextserialport
-LIBS  += -lqextserialport
-
-#CONFIG(debug, debug|release):LIBS  += -lqextserialportd
-#else:LIBS  += -lqextserialport
-#win32:LIBS += -lsetupapi
-
 LIBS += -lusb
 
 # Input

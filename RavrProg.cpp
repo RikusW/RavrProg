@@ -10,8 +10,6 @@
 
 #ifdef WIN32
 
-#define RCOM_SERIAL //work ok in windows
-
 //TODO add winusb support ?
 //TODO add win libusb support ?
 //TODO maybe add Jungo support ?
@@ -19,15 +17,9 @@
 #else //---------------------------------
 
 //Select one, or none
-//#define RCOM_SERIAL //still buggy... timeout too early...
-#define QEXT_SERIAL
 
 #define LIBUSB
 
-#endif
-
-#if defined RCOM_SERIAL && defined QEXT_SERIAL
-#error RCOM_SERIAL and QEXT_SERIAL cannot be used simultaneously
 #endif
 
 //-----------------------------------------------------------------------------
@@ -881,7 +873,7 @@ void PrintHex(const char *m, u8 *buf, int sz)
 //-----------------------------------------------------------------------------#####
 //RCom
 
-#ifdef RCOM_SERIAL
+#if 1
 
 #include "../Rtk/RCom.h"
 
@@ -933,105 +925,7 @@ const char *ProgPortSerial::GetPort(u32 u)
 	return 0;
 }
 
-#ifdef QEXT_SERIAL
-#error Cannot enable both serial port libs simultaneously
-#endif
-#else
-
 //RCom
-//-----------------------------------------------------------------------------#####
-//qextserialport
-
-#ifdef QEXT_SERIAL
-
-#include <qextserialport.h> //temp ???
-
-QextSerialPort port(QextSerialPort::Polling); //XXX
-
-bool ProgPortSerial::Open(const char *c)
-{
-	port.setPortName(c);
-//	port.setBaudRate(BAUD115200);
-	port.setDataBits(DATA_8);
-	port.setParity(PAR_NONE);
-	port.setStopBits(STOP_1);
-	port.setFlowControl(FLOW_OFF);
-	port.setTimeout(700);
-
-	return port.open(QIODevice::ReadWrite);
-}
-
-void ProgPortSerial::SetBaud(u32 b)
-{
-	u32 u;
-	if(b >= 115200) { u = BAUD115200; } else
-	if(b >= 57600)  { u = BAUD57600;  } else
-	if(b >= 38400)  { u = BAUD38400;  } else
-	if(b >= 19200)  { u = BAUD19200;  } else { u = BAUD9600; }
-	port.setBaudRate((BaudRateType)u);
-}
-
-void ProgPortSerial::Close()
-{
-	port.close();
-}
-
-#if 1
-u32 ProgPortSerial::Read(u8 *p,u32 u) //bug workaround
-{
-	int i = u;
-	u32 r = 0,t,to = u * 10;
-
-	printf("reading %i bytes\n",i);
-
-	while(i > 0 && to) {
-		t = port.read((char*)p,i > 32 ? 32 : i); // 1); if still buggy...
-		PrintHex("Read",p,t);
-		p += t;
-		r += t;
-		i -= t;
-		to--;
-	}
-	printf("done Reading %i\n",t);
-
-	return r;
-}
-#else
-u32 ProgPortSerial::Read(u8 *p,u32 u)
-{
-	return port.read((char*)p,u);
-}
-#endif
-
-u32 ProgPortSerial::Write(u8 *p,u32 u)
-{
-	PrintHex("Write",p,u);
-	return port.write((char*)p,u);
-}
-
-
-#include <qextserialenumerator.h>
-#include <QList>
-
-char portstring[50]; //should be enough
-QList<QextPortInfo> ports;
-
-const char *ProgPortSerial::GetPort(u32 u)
-{
-	if(!u) {
-		ports = QextSerialEnumerator::getPorts();
-	}
-
-	if(u < (u32)ports.size()) {
-		QString s = ports.at(u).physName;
-		strcpy(portstring,s.toLocal8Bit().constData());
-		return portstring;
-	}else{
-		return 0;
-	}
-}
-
-//qextserialport
 //-----------------------------------------------------------------------------#####
 #else
 // serial port support off
@@ -1041,8 +935,7 @@ void ProgPortSerial::Close() {}
 u32 ProgPortSerial::Read(u8 *,u32) { return 0; }
 u32 ProgPortSerial::Write(u8 *,u32) { return 0; }
 const char *ProgPortSerial::GetPort(u32 u) { return u ? 0 : "Not supported"; }
-#endif //#ifdef QEXT_SERIAL
-#endif //#ifdef RCOM_SERIAL
+#endif
 
 //-----------------------------------------------------------------------------#####
 //lib-usb
