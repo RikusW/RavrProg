@@ -1,5 +1,5 @@
 
-CXXFLAGS = -DXLIB -fPIC -DPIC -g -Wall -Wextra -Wno-unused-parameter
+CXXFLAGS = -DXLIB -fPIC -DPIC -g -Wall -Wextra -Wno-unused-parameter -I../
 
 lib-objs := AVRDragon.o Device.o JTAGICEmkI.o JTAGICEmkII.o LUFACDC.o RavrProg.o STK500.o STK600.o U2S.o
 

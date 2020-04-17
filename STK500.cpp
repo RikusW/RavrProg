@@ -1,7 +1,7 @@
 // vim:ts=4 sts=0 sw=4
 
 #include "RavrProg.h"
-#include "../Rtk/RConfig.h"
+#include "Rtk/RConfig.h"
 
 #include <stdio.h>
 

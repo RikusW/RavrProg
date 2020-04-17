@@ -1,8 +1,8 @@
 // vim:ts=4 sts=0 sw=4
 
-#include "../Rtk/rtypes.h"
+#include "Rtk/rtypes.h"
 #include "Device.h"
-#include "../Rtk/RConfig.h"
+#include "Rtk/RConfig.h"
 #include <stdio.h>
 #include <string.h>
 

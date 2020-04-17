@@ -620,7 +620,7 @@ typedef struct
 	u8 uiUpperExtIOLoc;  //RAM
 } jtag1_dd;
 
-#include "../Rtk/RConfig.h"
+#include "Rtk/RConfig.h"
 
 bool Jtag1Commands::SetDescriptor(Device *dev)
 {

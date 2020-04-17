@@ -5,7 +5,7 @@
 //rikusw gmail
 
 #include "RavrProg.h"
-#include "../Rtk/RConfig.h"
+#include "Rtk/RConfig.h"
 #include "BitBang.h"
 
 #include <stdio.h>

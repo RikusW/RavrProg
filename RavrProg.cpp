@@ -317,7 +317,7 @@ Device *ProgIF::SetDevice(int i)
 }
 //---------------------------------------------------------
 
-#include "../Rtk/RConfig.h"
+#include "Rtk/RConfig.h"
 
 void ProgIF::SetDefaults(Device *d)
 {
@@ -875,7 +875,7 @@ void PrintHex(const char *m, u8 *buf, int sz)
 
 #if 1
 
-#include "../Rtk/RCom.h"
+#include "Rtk/RCom.h"
 
 RCom rc; //XXX
 
