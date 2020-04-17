@@ -1,0 +1,20 @@
+SUBSYSTEM!="usb_device", ACTION!="add", GOTO="atmel_end"
+
+# Put this file in -> /etc/udev/rules.d/
+
+# Atmel Corp. JTAG ICE mkII
+ATTR{idVendor}=="03eb", ATTR{idProduct}=="2103", MODE="660", GROUP="dialout"
+# Atmel Corp. AVRISP mkII
+ATTR{idVendor}=="03eb", ATTR{idProduct}=="2104", MODE="660", GROUP="dialout"
+# Atmel Corp. STK600
+ATTR{idVendor}=="03eb", ATTR{idProduct}=="2106", MODE="660", GROUP="dialout"
+# Atmel Corp. Dragon
+ATTR{idVendor}=="03eb", ATTR{idProduct}=="2107", MODE="660", GROUP="dialout"
+# U2S - modem-manager must ignore U2S
+ATTR{idVendor}=="03eb", ATTR{idProduct}=="2018", MODE="660", GROUP="dialout", ENV{ID_MM_DEVICE_IGNORE}="1"
+
+# Altera USB Blaster
+ATTR{idVendor}=="09fb", ATTR{idProduct}=="6001", MODE="660", GROUP="dialout"
+
+LABEL="atmel_end"
+
