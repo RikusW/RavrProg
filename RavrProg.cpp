@@ -705,7 +705,7 @@ bool ProgIF::WriteFlashBlock(u8*, u32, u32)
 
 void ProgIF::VerifyFlash(const char *name, u8 type)
 {
-	name = 0;
+//	name = 0;
 	printf("Verifying Flash\n");
 	if(type == HEXFW) {
 		printf("HEXFW not supported yet\n");
@@ -830,7 +830,7 @@ bool ProgIF::WriteEepromBlock(u8*, u32, u32)
 
 void ProgIF::VerifyEeprom(const char *name, u8 type)
 {
-	name = 0;
+//	name = 0;
 	printf("Verifying Eeprom\n");
 	if(type == HEXFW) {
 		printf("HEXFW not supported yet\n");
