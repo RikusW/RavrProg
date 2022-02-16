@@ -1098,7 +1098,7 @@ typedef struct
 } jtag2_dd;
 
 
-#include "Rtk/RConfig.h"
+#include "Rtk-base/RConfig.h"
 
 bool Jtag2Commands::SetDescriptor(Device *dev)
 {

@@ -24,7 +24,7 @@ clean:
 #=========================================================#
 
 libRavrProg.so: $(lib-objs)
-	g++ -shared $(CXXFLAGS) -o libRavrProg.so $^ -lusb -lRtk -Wl,-soname -Wl,libRavrProg.so.0.1
+	g++ -shared $(CXXFLAGS) -o libRavrProg.so $^ -lusb -lRtk-base -Wl,-soname -Wl,libRavrProg.so.0.1
 # -lefence
 
 linkso:

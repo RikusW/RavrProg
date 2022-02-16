@@ -3,8 +3,8 @@
 #ifndef RavrProg_H
 #define RavrProg_H
 
-#include "Rtk/rtypes.h"
-#include "Rtk/RHexFile.h"
+#include "Rtk-base/rtypes.h"
+#include "Rtk-base/RHexFile.h"
 #include "Device.h"
 
 class Programmer;
