@@ -3,7 +3,7 @@
 #ifndef RavrProg_H
 #define RavrProg_H
 
-#include "Rtk-base/rtypes.h"
+#include "Rtk-base/RTypes.h"
 #include "Rtk-base/RHexFile.h"
 #include "Device.h"
 
